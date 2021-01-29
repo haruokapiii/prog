@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 32px;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+header {
+  background-color: rgb(145, 139, 114);
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: #fff;
+}
+
+main {
+  padding: 2ch;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  color: rgb(97, 87, 73);
+
+}
+
+
+h1{
+  font-size:50px;
+}
+h2{
+  font-size:16px;
+}
+footer {
+  background-color: rgb(243, 236, 220);
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  color: #fff;
+  padding: 3ch;
+}
+
+p {
+  font-size: 100%;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  height: 100px;
+}
+
+ul {
+  padding: 0;
+  border-top: 1px solid #000000;
+  display: table;
+  /* 定義 */
+  table-layout: fixed;
+  width: 100%;
+}
+
+li {
+  text-align: center;
+  list-style-type: none;
+  border: 1px solid #666;
+  background-color: #FFF;
+  display: table-cell;
+  /* 定義 */
+  cursor: pointer;
+}
+
+li:hover {
+  background: #0066CC;
+  color: #fff;
+}
+textarea{
+  margin: 3%;
+  width: 30%;
+  height: 30px;
+  font-size:50%;
+  box-shadow: 3px 3px 3px 3px #555;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title></title>
+</head>
+<body>
+    <header>
+        <h1>Make youe own cosmetics</h1>
+        <h2>あなたに似合うコスメをお探しします</h2>
+    </header>
+
+    
+
+
+<main>
+    <select name="change_js">
+        <option value="">default</option>
+        <option value="./sample1.html">リップ</option>
+        <option value="./sample2.html">ファンデーション</option>
+        <option value="./sample3.html">アイシャドウ</option>
+    </select>
+
+</main>
+
+<footer>  </footer>
+<script>
+//ここから記述領域［START］
+const selected = $("select[name=change_js]");
+        selected.on('change', function(){
+            window.location.href = selected.val();
+        });
+//ここまでが記述領域［END］
+</script>
+</body>
+</html>
+
+
+
+

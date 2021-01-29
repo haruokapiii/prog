@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>クイズ練習（複数）</title>
+</head>
+<body>
+
+<header>
+    <h1>あなたに似合うアイシャドウをお探しします</h1>
+    <h2>１問目</h2>
+</header>
+
+<main>
+  <p id="quest">ここに問題が出題されます</p>
+  <p>
+    <input type="radio" name="toi" value="1"><span id="toi1">選択肢１</span>
+    <input type="radio" name="toi" value="2"><span id="toi2">選択肢２</span>
+    <input type="radio" name="toi" value="8"><span id="toi3">選択肢３</span>
+  </p>
+</main>
+
+<footer>フッター</footer>
+<script>
+//ここから記述領域［START］
+
+  //以下に配列を記述してください。
+  //問題文[配列]
+  const qs = [
+  "あなたのパーソナルカラーは",
+  "どんなタイプが好き？",
+  ];
+
+    
+  //回答選択肢[多重配列]
+const toi= [
+["イエベ","ブルべ","わからない"],
+["多色ラメ","小粒ラメ","ナチュラル"],
+
+];
+
+
+
+
+let i = 0;
+$("#quest").text( qs[i] );
+$("#toi1").text( toi[i][0] );
+$("#toi2").text( toi[i][1] );
+$("#toi3").text( toi[i][2] );
+
+
+
+
+  $("[name=toi]").on("click",function(){
+    $("h2").text(i+2+"問目");
+    const v=$(this).val();
+
+    i++;
+    $("#quest").text( qs[i] );
+    $("#toi1").text( toi[i][0] );
+    $("#toi2").text( toi[i][1] );
+    $("#toi3").text( toi[i][2] );
+    const y = v*2;
+
+if(y==32){
+window.location.href = "https://noevirgroup.jp/excel/g/g48631/"
+};
+    });
+
+
+
+
+
+//ここまでが記述領域［END］
+</script>
+</body>
+</html>
